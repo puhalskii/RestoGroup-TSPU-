@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="RestogroupDBPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>restogroupdb.Ingridient</class>
+    <class>restogroupdb.Zakaz</class>
+    <class>restogroupdb.Dolzhost</class>
+    <class>restogroupdb.Bludo</class>
+    <class>restogroupdb.Sotrudnik</class>
+    <class>restogroupdb.Zakazchik</class>
+    <class>restogroupdb.Postavshik</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://10.193.113.150:3306/student-resto?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="student"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="std123"/>
+    </properties>
+  </persistence-unit>
+</persistence>
